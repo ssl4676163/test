@@ -25,6 +25,10 @@ export class HomePage {
     this.getHomeInfo('29');
   }
 
+  selectPageMenu(event,index){
+
+  }
+
   doInfinite(){
     this.presentLoading();
   }
