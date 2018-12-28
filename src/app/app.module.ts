@@ -13,10 +13,12 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { DetailPage } from '../pages/detail/detail';
+import { MorningPage } from '../pages/morning/morning'
 import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { ComponentsModule } from '../components/components.module';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     TabsPage,
     HomePage,
     ListPage,
-    DetailPage
+    DetailPage,
+    MorningPage
   ],
   imports: [
     VgCoreModule,
@@ -35,6 +38,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HttpModule,
     HttpClientModule,
     IonicModule.forRoot(MyApp),
+    ComponentsModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -42,6 +46,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     ListPage,
     DetailPage,
+    MorningPage,
     TabsPage
   ],
   providers: [

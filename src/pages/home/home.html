@@ -18,17 +18,36 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+
+  <ion-content>
+
+<ion-slides #contentSlides (ionSlideDidChange)="slideChanged()">
+    <ion-slide>
+      <page-morning></page-morning>
+    </ion-slide>
+    <ion-slide>
+      <page-morning></page-morning>
+    </ion-slide>
+    <ion-slide>
+      <page-morning></page-morning>
+    </ion-slide>
+    <ion-slide>
+      <page-morning></page-morning>
+    </ion-slide>
+  </ion-slides>
+  
+  </ion-content>
+
+
+<!-- <ion-content padding>
 
     <ion-refresher (ionRefresh)="doRefresh($event)">
       <ion-refresher-content></ion-refresher-content>
     </ion-refresher>
 
-  <!-- <button ion-button secondary menuToggle>Toggle Menu</button> -->
 
   <ion-item *ngFor="let tItem of testArray">
     <vg-player>
-      <!-- <vg-overlay-play></vg-overlay-play> -->
       <vg-buffering></vg-buffering>
       <vg-controls [vgAutohide]="true" [vgAutohideTime]="3">
         <vg-play-pause></vg-play-pause>
@@ -67,5 +86,5 @@
   <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
       <ion-infinite-scroll-content></ion-infinite-scroll-content>
     </ion-infinite-scroll>
-</ion-content>
+</ion-content> -->
 
