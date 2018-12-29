@@ -33,9 +33,7 @@ export class HomePage {
 
   slideChanged() {
     let index = this.contentSlides.getActiveIndex();
-    console.log(this.contentSlides);
     this.setStyle(index);
-    // this.swiper.slideTo(index, 300);
     if(index == 0){
       this.contentSlides.lockSwipeToPrev(true);
     }else if(index>0 && index <3){
@@ -44,6 +42,15 @@ export class HomePage {
     if(index == 3){
       this.contentSlides.lockSwipeToNext(true);
     }else if(index<3 && index >0){
+      this.contentSlides.lockSwipeToNext(false);
+    }
+  }
+
+  selectPageMenu(event,index){
+    this.contentSlides.slideTo(index);
+    if(index == 3){
+      this.contentSlides.lockSwipeToPrev(false);
+    }else if(index == 0){
       this.contentSlides.lockSwipeToNext(false);
     }
   }
@@ -84,10 +91,6 @@ export class HomePage {
     });
   }
 
-  selectPageMenu(event,index){
-
-  }
-
   doInfinite(){
     this.presentLoading();
   }
@@ -118,7 +121,6 @@ export class HomePage {
   }
 
   openPage(id){
-    // this.presentToast(id);
     let data: Object = {
       pageId: id
     };

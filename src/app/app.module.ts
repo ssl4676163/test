@@ -13,8 +13,12 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { DetailPage } from '../pages/detail/detail';
-import { MorningPage } from '../pages/morning/morning'
+import { MorningPage } from '../pages/morning/morning';
+import { myReadPage } from '../pages/myRead/myRead';
+import { guessYouLikePage } from '../pages/guessYouLike/guessYouLike';
+import { VideoPage } from '../pages/video/video';
 import { TabsPage } from '../pages/tabs/tabs';
+import { DiscoverPage } from '../pages/discover/discover';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -27,7 +31,11 @@ import { ComponentsModule } from '../components/components.module';
     HomePage,
     ListPage,
     DetailPage,
-    MorningPage
+    MorningPage,
+    myReadPage,
+    guessYouLikePage,
+    VideoPage,
+    DiscoverPage
   ],
   imports: [
     VgCoreModule,
@@ -47,6 +55,10 @@ import { ComponentsModule } from '../components/components.module';
     ListPage,
     DetailPage,
     MorningPage,
+    myReadPage,
+    guessYouLikePage,
+    VideoPage,
+    DiscoverPage,
     TabsPage
   ],
   providers: [

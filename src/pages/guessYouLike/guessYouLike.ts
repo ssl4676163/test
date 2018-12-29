@@ -5,11 +5,11 @@ import { ModalController } from 'ionic-angular';
 import { DetailPage } from '../detail/detail';
 
 @Component({
-    selector: 'page-morning',
-    templateUrl: 'morning.html'
+    selector: 'page-guessYouLike',
+    templateUrl: 'guessYouLike.html'
 })
 
-export class MorningPage {
+export class guessYouLikePage {
     
   public Nowdate: string;
   private lastId: string = '';
@@ -19,7 +19,7 @@ export class MorningPage {
   menus: Array<string> = ["滑动菜单", "滑动菜单", "滑动菜单", "滑动菜单"];
   testSegment:string=this.testArray[0];
   constructor(public navCtrl: NavController,public app: App,public modalCtrl: ModalController,public rest:RestProvider,public loadingCtrl: LoadingController, public menu: MenuController,private toastCtrl: ToastController) {
-    this.ionViewDidLoad();
+    // this.ionViewDidLoad();
     menu.enable(true);
   }
 

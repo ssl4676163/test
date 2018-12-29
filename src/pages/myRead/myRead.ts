@@ -5,11 +5,11 @@ import { ModalController } from 'ionic-angular';
 import { DetailPage } from '../detail/detail';
 
 @Component({
-    selector: 'page-morning',
-    templateUrl: 'morning.html'
+    selector: 'page-myRead',
+    templateUrl: 'myRead.html'
 })
 
-export class MorningPage {
+export class myReadPage {
     
   public Nowdate: string;
   private lastId: string = '';

@@ -1,0 +1,50 @@
+<ion-content padding>
+
+        <ion-refresher (ionRefresh)="doRefresh($event)">
+          <ion-refresher-content></ion-refresher-content>
+        </ion-refresher>
+    
+      <!-- <button ion-button secondary menuToggle>Toggle Menu</button> -->
+    
+      <ion-item *ngFor="let tItem of testArray">
+        <vg-player>
+          <!-- <vg-overlay-play></vg-overlay-play> -->
+          <vg-buffering></vg-buffering>
+          <vg-controls [vgAutohide]="true" [vgAutohideTime]="3">
+            <vg-play-pause></vg-play-pause>
+            <vg-time-display [vgProperty]="'current'"></vg-time-display>
+            <vg-scrub-bar>
+              <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+              <vg-scrub-bar-buffering-time></vg-scrub-bar-buffering-time>
+            </vg-scrub-bar>
+            <vg-time-display [vgProperty]="'total'"></vg-time-display>
+            <vg-fullscreen></vg-fullscreen>
+          </vg-controls>
+          <video #media [vgMedia]="media" poster="http://muji.bandao.cn/imgcache/aHR0cDovL21mcy5iYW5kYW8uY24vc3RvcmFnZS9tZnMvNWMxYjI4ZjYyNzQ4ZGIwMDZkMTcwYmRhLmpwZWc=_150x100.jpeg"
+            src="http://bddxw.bandaoapp.com/%E6%9D%A8%E6%98%B1/%E8%AE%B0%E8%80%85%E9%87%87%E8%AE%BF/12%E6%9C%88/12.16-30/%E7%94%B7%E5%AD%90%E5%85%AC%E4%BA%A4%E8%BD%A6%E4%B8%8A%E7%8C%A5%E4%BA%B5%E5%A5%B3%E4%B9%98%E5%AE%A2.mp4"></video>
+        </vg-player>
+        <ion-item>
+          <ion-avatar item-left>
+          </ion-avatar>
+          <h2><strong>标题22222</strong></h2>
+          <h3>描述</h3>
+        </ion-item>
+      </ion-item>
+    
+      <ion-list class="ion-list" *ngFor="let Item of listData">
+        <ion-item class="ion-item" (click)="openPage(Item.id)">
+            <ion-thumbnail class="ion-thumbnail" item-start>
+              <img class="ion-thumbnail-img" src="http://muji.bandao.cn/imgcache/aHR0cDovL21mcy5iYW5kYW8uY24vc3RvcmFnZS9tZnMvNWMxYjI4ZjYyNzQ4ZGIwMDZkMTcwYmRhLmpwZWc=_150x100.jpeg">
+            </ion-thumbnail>
+            <ion-item class="ion-item2">
+              <h2 class="h2">{{Item?.title}}</h2>
+              <h3>{{Item?.summary}}</h3>
+            </ion-item>
+          </ion-item>
+      </ion-list>
+    
+    
+      <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+        <ion-infinite-scroll-content></ion-infinite-scroll-content>
+      </ion-infinite-scroll>
+    </ion-content>

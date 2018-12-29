@@ -1,53 +1,14 @@
-<ion-header class="headerT">
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <div class="pageMenuSlides">
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide {{i==0?'bottomLine':''}}" *ngFor="let item of menus;let i=index;" tappable (click)="selectPageMenu($event,i)">{{item}}</div>
-        </div>
-        <!-- <ion-icon name="star"></ion-icon> -->
-          <button ion-button icon-only>
-            <ion-icon name="musical-notes"></ion-icon>
-          </button>
-      </div>
-    </div>
-  </ion-navbar>
-</ion-header>
-
-
-  <ion-content>
-
-<ion-slides class="ion-slides" #contentSlides (ionSlideDidChange)="slideChanged()">
-    <ion-slide>
-      <page-morning></page-morning>
-    </ion-slide>
-    <ion-slide>
-      <page-myRead></page-myRead>
-    </ion-slide>
-    <ion-slide>
-      <page-guessYouLike></page-guessYouLike>
-    </ion-slide>
-    <ion-slide>
-        <!-- <page-guessYouLike></page-guessYouLike> -->
-      <page-video></page-video>
-    </ion-slide>
-  </ion-slides>
-  
-  </ion-content>
-
-
-<!-- <ion-content padding>
+<ion-content padding>
 
     <ion-refresher (ionRefresh)="doRefresh($event)">
       <ion-refresher-content></ion-refresher-content>
     </ion-refresher>
 
+  <!-- <button ion-button secondary menuToggle>Toggle Menu</button> -->
 
   <ion-item *ngFor="let tItem of testArray">
     <vg-player>
+      <!-- <vg-overlay-play></vg-overlay-play> -->
       <vg-buffering></vg-buffering>
       <vg-controls [vgAutohide]="true" [vgAutohideTime]="3">
         <vg-play-pause></vg-play-pause>
@@ -65,7 +26,7 @@
     <ion-item>
       <ion-avatar item-left>
       </ion-avatar>
-      <h2><strong>标题</strong></h2>
+      <h2><strong>标题1111111222</strong></h2>
       <h3>描述</h3>
     </ion-item>
   </ion-item>
@@ -84,7 +45,6 @@
 
 
   <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
-      <ion-infinite-scroll-content></ion-infinite-scroll-content>
-    </ion-infinite-scroll>
-</ion-content> -->
-
+    <ion-infinite-scroll-content></ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>

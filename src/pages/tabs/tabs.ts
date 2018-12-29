@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import { HomePage } from '../home/home';
+import { DiscoverPage } from '../discover/discover';
 
 // import { HomePage } from '../home/home';
 // import { NotifitionPage } from '../notifition/notifition';
@@ -13,10 +14,10 @@ import { HomePage } from '../home/home';
 export class TabsPage {
 
   tabHome = HomePage;
-  tabDiscovery = HomePage;
-  tabMore = HomePage;
-  tabNotifition = HomePage;
-  tabChat = HomePage;
+  tabDiscovery = DiscoverPage;
+  tabMore = DiscoverPage;
+  tabNotifition = DiscoverPage;
+  tabChat = DiscoverPage;
 
   constructor() {
 
