@@ -14,3 +14,46 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+.toolbar-background{
+    // background: #000 !important;
+    height:60px !important;
+}
+ion-title{
+    background-color: #fff !important;
+}
+.slidesMenu{
+    margin-top:60px;
+    text-align: center;
+}
+.slidesIonList{
+    text-align: center !important;
+    background-color: red !important;
+    width: 150px !important;
+}
+.slidesMenu .slidesMenuImg{
+    // height:auto;
+    // width:50%;
+    max-width:120px;
+    max-height:120px;
+    width:"150px";
+    height:"150px";
+    border-radius:50%;
+}
+.item-ios{
+    padding-left: 0 !important;
+}
+.ion-list{
+    // width: 100% !important;
+    text-align: center !important;
+}
+.item-inner{
+    background-image: url() !important;
+    padding-right: 0 !important;
+}
+.item-block{
+    border-top:0 solid #fff !important;
+    border-bottom:0 solid #fff !important;
+}
+.item-inner{
+    border-bottom:0 solid #fff !important;
+}
