@@ -1,0 +1,74 @@
+page-morning{
+
+    .subscription{
+        font-size: 8px;
+    }
+
+    .nickName{
+        font-size: 1.5rem;
+    }
+
+    .avatar{
+        height: 42px !important;
+        width: 42px !important;
+    }
+
+    .subscriptionDiv{
+        display: inline-block;
+    }
+
+    .subscriptionDiv p {
+        display: inline;
+    }
+
+    .subscriptionDiv p img{
+        height: 15px;
+        width: 15px;
+        margin: 0px 0 0 5px !important;
+    }
+
+    .title-h2{
+        font-weight: 700;
+    }
+
+    .summary{
+        display: block !important;
+    }
+    
+    .summary span {
+        white-space:normal;
+        font-size: 14px;
+        display:-webkit-box;
+        -webkit-box-orient:vertical;
+        -webkit-line-clamp:2;
+    }
+
+    .itemImgs{
+        margin-top: 10px;
+        width: 100%;
+        display: inline-block;
+    }
+
+    .largeLeftImg{
+        width: 40% ;
+        height: 100px;
+        float: left;
+        // display: inline;
+    }
+
+    .smallRightImgs{
+        width: 60%;
+        float: right;
+        // display: inline !important;
+    }
+
+    .smallRightImgs img{
+        width: 30%;
+    }
+
+    .grayLine{
+        width: 100%;
+        height: 1px;
+        background-color: #c2c2c2;
+    }
+}
