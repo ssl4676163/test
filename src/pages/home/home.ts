@@ -1,4 +1,4 @@
-import { Component, ViewChild} from '@angular/core';
+import { Component, ViewChild, ChangeDetectorRef} from '@angular/core';
 import { NavController,ToastController,MenuController,App,LoadingController ,Slides} from 'ionic-angular';
 import { RestProvider } from '../../providers/rest/rest';
 import { ModalController } from 'ionic-angular';
@@ -17,18 +17,32 @@ export class HomePage {
   private lastId: string = '';
   newListData: Array<string> =[];
   listData: Object;
+  now = new Date(); // 当前时间
+  hour = this.now.getHours();
+  sayHolle = "早上好";
   testArray:string[]=[ '菜单一','菜单二' ,'菜单三' ,'菜单四' ];
-  menus: Array<string> = ["早上好", "我的订阅", "猜你喜欢", "视频"];
+  menus: Array<string> = [this.sayHolle, "我的订阅", "猜你喜欢", "视频"];
   testSegment:string=this.testArray[0];
-  constructor(public navCtrl: NavController,public app: App,public modalCtrl: ModalController,public rest:RestProvider,public loadingCtrl: LoadingController, public menu: MenuController,private toastCtrl: ToastController) {
+  constructor(public navCtrl: NavController,public app: App,public modalCtrl: ModalController,public rest:RestProvider,public loadingCtrl: LoadingController, public menu: MenuController,private toastCtrl: ToastController,public cd :ChangeDetectorRef) {
     menu.enable(true);
   }
 
   ionViewDidLoad(){
-    // let flag = this.contentSlides.;
+    this.changeHello();
     this.contentSlides.lockSwipeToPrev(true);
-    // this.initSwiper();
-    // this.getHomeInfo('29');
+  }
+
+  changeHello(){
+    if(this.hour>=6 && this.hour <10){
+      this.sayHolle = "早上好";
+    }else if(this.hour>=10 && this.hour < 14){
+      this.sayHolle = "中午好";
+    }else if(this.hour >=14 && this.hour < 18){
+      this.sayHolle = "下午好";
+    }else {
+      this.sayHolle = "晚上好";
+    }
+    this.menus.splice(0,1,this.sayHolle);
   }
 
   slideChanged() {

@@ -1,17 +1,13 @@
-<ion-menu [content]="content">
-  <ion-header>
-    <ion-toolbar>
-      <ion-title>
-        <!-- Menu -->
-      </ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-menu [content]="content" class="background">
 
   <ion-content class="slidesMenu">
-    <img src="../assets/imgs/logo.png" alt="" class="slidesMenuImg">
-    <ion-list class="ion-list">
-      <button class="slidesIonList" menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
-        {{p.title}}
+    <img src="../assets/imgs/LOGO-avatar.png" alt="" class="slidesMenuImg">
+    <div class="nikeName">哩二哩</div>
+    <ion-list class="ion-list"  *ngFor="let p of pages">
+      <button class="slidesIonList" (click)="openPage(p)">
+        <div>
+          {{p.title}}
+        </div>
       </button>
     </ion-list>
 

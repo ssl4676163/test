@@ -1,0 +1,126 @@
+.subscription{
+    font-size: 8px;
+}
+
+.nickName{
+    font-size: 1.5rem;
+}
+
+.avatar{
+    height: 42px !important;
+    width: 42px !important;
+}
+
+.subscriptionDiv{
+    display: inline-block;
+}
+
+.subscriptionDiv p {
+    display: inline;
+}
+.summary span{
+    font-weight: 700;
+    font-size: 18px;
+    font-family: "微软雅黑";
+}
+.summarySmall span{
+    font-weight: 700;
+    font-size: 15px;
+    font-family: "微软雅黑";
+    color: #666666;
+}
+.subscriptionDiv p img{
+    height: 15px;
+    width: 15px;
+    margin: 0px 0 0 5px !important;
+}
+.grayLine{
+    height: 1px;
+    background-color: #c2c2c2;
+    margin:3px 0 10px 0;
+    opacity: 0.6
+}
+.greenLine{
+    height: 10px;
+    background-color: #e9eeea;
+}
+.itemFooter{
+    // width: 100%;
+    display: inline-block;
+    height: 20px !important;
+}
+
+.itemFooter img{
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+vg-controls{
+    background-color: rgba(0, 0, 0, 0.2) !important; 
+    height: 30px !important;
+}
+vg-play-pause{
+    height: 30px !important;
+}
+vg-scrub-bar {
+    height: 30px !important;
+}
+vg-fullscreen{
+    height: 30px !important;
+}
+vg-time-display{
+    height: 30px !important;
+    line-height:30px !important;
+    font-size: 13px !important;
+}
+.itemFooter .moreImg{
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    float: right;
+}
+
+.itemFooter span{
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.itemFooter .footerNum{
+    margin-right: 10px;
+    font-size: 12px;
+}
+.padding{
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+}
+
+.itemFooter{
+    // margin-top:10px;
+    width: 100%;
+    display: inline-block;
+    height: 20px !important;
+}
+
+.itemFooter img{
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+.itemFooter .moreImg{
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    float: right;
+}
+
+.itemFooter span{
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.itemFooter .footerNum{
+    margin-right: 10px;
+    font-size: 12px;
+}

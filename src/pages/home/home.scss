@@ -90,7 +90,7 @@ page-home {
   }
 
   .label-ios {
-    margin: 5px 0 5px 0 !important;
+    margin: 0px 0 0px 0 !important;
   }
 
   .ion-thumbnail {
@@ -158,15 +158,17 @@ page-home {
     .bottomLine {
       color: #ceff48 !important;
       font-size: 15px;
-      border-bottom: 2px solid #ceff48;
+      border-bottom: 3px solid #ceff48;
+      margin-top:0px;
     }
+
 
     // .swiper-wrapper{
     //     // background: #333;
     //     background: -webkit-linear-gradient(left, #333 , #000);
     // }
   }
-
+  
   ion-slides {
     background-color: white;
 

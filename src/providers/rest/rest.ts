@@ -20,13 +20,10 @@ export class RestProvider {
     // console.log('Hello RestProvider Provider');
   }
 
-  // private apiUrlLogin = 'https://imoocqa.gugujiankong.com/api/account/login';
   private loginUrl = 'http://wm.bandao.cn/api/?module=user.login';
-  // private loginUrl = 'http://wm.bandao.cn/api/?module=user.login&tel=13695428630&p=4676163';
 
   login(mobile,password):Observable<string[]>{
     return this.getUrlReturn(this.loginUrl+"&tel="+mobile+"&p="+password);
-    // return this.ht.request(this.apiUrlLogin+"?mobile="+mobile+"&password="+password).subscribe;
   }
 
   private getUrlReturn(url:string):Observable<string[]>{

@@ -1,11 +1,31 @@
-<ion-content padding>
+<ion-content class="background">
   <ion-refresher (ionRefresh)="doRefresh($event)">
     <ion-refresher-content></ion-refresher-content>
   </ion-refresher>
 
-  <ion-item *ngFor="let tItem of testArray">
-    <ion-item>
-      <ion-item-divider>
+  <div>
+    <div class="label">
+      <div class="line"></div>
+      <div class="line"></div>
+      <span>星期日/18篇内容，30分钟</span>
+    </div>
+  </div>
+
+  <div class="newBody">
+    <div class="">
+      <img class="new" src="../../assets/fonts/new.svg" alt="">
+      <span class="newSpan">我关注的内容有6条更新</span>
+    </div>
+    <!-- <div class="informDiv">
+      <img class="informImg" src="../../assets/fonts/inform.svg" alt="">
+      <span class="informSpan">3条留言</span>
+    </div> -->
+    <img class="downArrow" src="../../assets/fonts/downArrow.svg" alt="">
+  </div>
+
+  <ion-item *ngFor="let tItem of testArray" >
+    <ion-item >
+      <ion-item-divider class="padding" style="margin-bottom:-10px !important;margin-top:10px;">
         <ion-avatar item-start>
           <img class="avatar" src="../../assets/imgs/dribbble_india_stories_detail.png">
         </ion-avatar>
@@ -14,12 +34,14 @@
           <p class="subscription">喜欢我就点击订阅我</p><p><img src="../../assets/imgs/authentication.svg" alt=""></p>
         </div>
       </ion-item-divider>
-      <ion-item-divider class="summary">
+      <ion-item-divider class="summary padding">
         <h2 class="title-h2" item-start>[我爱独角兽]</h2>
         <span>我想探索一个对话的好奇心、焦虑和能量。根据我们成长的方式，有时我们会因为紧张的生活和单调的日常生活而失去新鲜感</span>
-        <!-- <div class="grayLine"></div> -->
       </ion-item-divider>
-      <ion-item-divider class="itemImgs">
+      <div style="padding:5px 16px 3px 16px !important;">
+        <div class="grayLine"></div>
+      </div>
+      <ion-item-divider class="itemImgs padding">
         <div class="largeLeftImg">
           <img src="../../assets/imgs/2.png" alt="">
         </div>
@@ -34,8 +56,10 @@
           <img src="../../assets/imgs/2.png" alt="">
         </div>
       </ion-item-divider>
-      <div class="grayLine"></div>
-      <div class="itemFooter">
+      <div style="padding:3px 16px 5px 16px !important;">
+          <div class="grayLine"></div>
+      </div>
+      <div class="itemFooter padding">
         <img src="../../assets/imgs/transmit.svg" alt="">
         <img src="../../assets/imgs/redHeart.svg" alt="">
         <img src="../../assets/imgs/good.svg" alt="">

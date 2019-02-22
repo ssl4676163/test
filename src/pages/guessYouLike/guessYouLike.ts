@@ -10,7 +10,7 @@ import { DetailPage } from '../detail/detail';
 })
 
 export class guessYouLikePage {
-    
+     
   public Nowdate: string;
   private lastId: string = '';
   newListData: Array<string> =[];
@@ -19,7 +19,7 @@ export class guessYouLikePage {
   menus: Array<string> = ["滑动菜单", "滑动菜单", "滑动菜单", "滑动菜单"];
   testSegment:string=this.testArray[0];
   constructor(public navCtrl: NavController,public app: App,public modalCtrl: ModalController,public rest:RestProvider,public loadingCtrl: LoadingController, public menu: MenuController,private toastCtrl: ToastController) {
-    // this.ionViewDidLoad();
+    this.ionViewDidLoad();
     menu.enable(true);
   }
 
@@ -39,6 +39,7 @@ export class guessYouLikePage {
     this.presentLoading();
 
     setTimeout(() => {
+      console.log(new Date());
       refresher.complete();
       this.Nowdate = '上次刷新：' + (new Date().getMonth() + 1).toString() + '月 '
         + new Date().getDate().toString() + '日  '

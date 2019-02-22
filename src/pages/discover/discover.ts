@@ -20,6 +20,7 @@ export class DiscoverPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad DiscoverPage');
+    
   }
 
 }

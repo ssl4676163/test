@@ -39,6 +39,7 @@ export class myReadPage {
     this.presentLoading();
 
     setTimeout(() => {
+      console.log(new Date());
       refresher.complete();
       this.Nowdate = '上次刷新：' + (new Date().getMonth() + 1).toString() + '月 '
         + new Date().getDate().toString() + '日  '

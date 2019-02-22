@@ -15,20 +15,39 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 .toolbar-background{
-    // background: #000 !important;
+    background: #555555 !important;
     height:60px !important;
 }
-ion-title{
-    background-color: #fff !important;
+.menu-inner{
+    background: #555555 !important;
+}
+.scroll-content{
+    margin-top:50px;
+}
+img{
+    margin-bottom: 10px;
+}
+.nikeName{
+    font-size: 20px;
+    color: white;
+    font-family: "heiti";
+    margin-bottom: 30px;
 }
 .slidesMenu{
     margin-top:60px;
     text-align: center;
+    background: #555555;
 }
 .slidesIonList{
     text-align: center !important;
-    background-color: red !important;
+    background-color: #feb254 !important;
     width: 150px !important;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    font-family:"黑体";
 }
 .slidesMenu .slidesMenuImg{
     max-width:120px;
@@ -41,7 +60,7 @@ ion-title{
     padding-left: 0 !important;
 }
 .ion-list{
-    // width: 100% !important;
+    width: 100% !important;
     text-align: center !important;
 }
 .item-inner{

@@ -14,3 +14,48 @@
         color: #fff !important;
         font-weight: 600;
     }
+    .ion-ios-s-custom {
+    content: url("../../assets/fonts/S1.svg");
+    }
+    
+    .ion-ios-s-custom-outline {
+    content: url("../../assets/fonts/S.svg");
+    }
+
+    .ion-ios-o-custom {
+    content: url("../../assets/fonts/o1.svg");
+    }
+    .ion-ios-o-custom-outline {
+    content: url("../../assets/fonts/o.svg");
+    }
+        
+    .ion-ios-m-custom {
+    content: url("../../assets/fonts/M1.svg");
+    }
+    .ion-ios-m-custom-outline {
+    content: url("../../assets/fonts/M.svg");
+    }
+
+    .ion-ios-e-custom {
+    content: url("../../assets/fonts/E1.svg");
+    }
+    .ion-ios-e-custom-outline {
+    content: url("../../assets/fonts/E.svg");
+    }
+
+    .fish{
+        font-size: 30px;
+        width: 100px;
+        height: 100px;
+    }
+    .ion-ios-fish-custom {
+    content: url("../../assets/fonts/fish2.svg");
+    }
+    .ion-ios-fish-custom-outline {
+    content: url("../../assets/fonts/fish.svg");
+    }
+    .ion-ios-fish-custom, .ion-ios-fish-custom-outline{
+        width: 45px !important;
+        height: 45px !important;
+        min-width: 45px !important;
+    }

@@ -1,4 +1,4 @@
-page-morning{
+page-guessYouLike{
 
     .background{
         // background-color: #f7f7f7 !important;
@@ -123,66 +123,4 @@ page-morning{
         background-color: #e7e4e4;
     }
     
-    .newBody{
-        height: 65px;
-        width: 100%;
-        margin-top: 10px;
-        border-bottom: 1px rgba(0, 0, 0, 0.2) solid;
-        text-align: center;
-    }
-    .newDiv{
-        // position: absolute;
-    }
-    .new{
-        width: 30px;
-        height: 30px;
-        margin-bottom: -10px !important;
-    }
-    .newSpan{
-        font-size: 16px;
-        margin-bottom: 15px !important;
-        font-weight: 700;
-        font-family: "微软雅黑";
-    }
-    .downArrow{
-        width: 35px;
-        height: 35px;
-    }
-    .downArrowDiv{
-        // position: absolute;
-    }
-    .informDiv{
-        float:right;
-    }
-    .informImg{
-        width: 16px;
-        height: 16px;
-        margin-bottom: -5px !important;
-    }
-    .informSpan{
-        font-size: 12px;
-        color: #666666;
-    }
-
-    .line{
-        height: 1px;
-        width: 50px;
-        background: #666666;
-        margin-top:10px;
-    }
-    .line:nth-child(1){
-        float: left;
-        margin-right: 10px;
-    }
-    .line:nth-child(2){
-        float: right;
-        margin-left: 10px;
-    }
-    .label{
-        display: inline-block;
-    }
-    .label span{
-        font-size: 16px;
-        font-weight: 700;
-    }
 }
