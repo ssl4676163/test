@@ -1,7 +1,12 @@
 page-myRead{
 
+    .item-divider-ios{
+        background-color: #ffffff !important;
+    }
+
     .background{
         // background-color: #f7f7f7 !important;
+        background: #fff !important;
     }
 
     .label-ios{
@@ -14,6 +19,7 @@ page-myRead{
 
     .nickName{
         font-size: 1.5rem;
+        font-weight: 700;
     }
 
     .avatar{
@@ -75,18 +81,27 @@ page-myRead{
     .smallRightImgs img{
         width: 33%;
     }
-
     .itemFooter{
         margin-top:0px !important;
         width: 100%;
         display: inline-block;
         height: 20px !important;
+        margin-bottom: 10px;
+    }
+    .footerNum{
+        margin: 5px 10px 0 0;
+        font-size: 12px !important;
     }
 
     .itemFooter img{
         height: 20px;
         width: 20px;
         margin-right: 10px;
+        float: left;
+    }
+
+    .itemFooter div{
+        float: left;
     }
 
     .itemFooter .moreImg{
@@ -99,11 +114,6 @@ page-myRead{
     .itemFooter span{
         font-size: 12px;
         margin-bottom: 10px;
-    }
-
-    .itemFooter .footerNum{
-        margin-right: 10px;
-        font-size: 12px;
     }
 
     .padding{

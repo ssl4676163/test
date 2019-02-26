@@ -16,6 +16,7 @@ export class MorningPage {
   newListData: Array<string> =[];
   listData: Object;
   testArray:string[]=[ '菜单一','菜单二' ,'菜单三' ,'菜单四' ];
+  testArr:string[]=[ '菜单一','菜单二'];
   menus: Array<string> = ["滑动菜单", "滑动菜单", "滑动菜单", "滑动菜单"];
   testSegment:string=this.testArray[0];
   constructor(public navCtrl: NavController,public app: App,public modalCtrl: ModalController,public rest:RestProvider,public loadingCtrl: LoadingController, public menu: MenuController,private toastCtrl: ToastController) {
@@ -57,8 +58,6 @@ export class MorningPage {
     this.rest.getNewsList(lastId).subscribe(res => {
       this.listData = res.json();
       this.listData = this.listData['list'];
-    //   console.log(res.json());
-    //   console.log('22222222222');
     })
   }
 

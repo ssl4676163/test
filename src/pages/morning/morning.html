@@ -35,14 +35,13 @@
         </div> -->
       </ion-item-divider>
       <div style="padding:5px 16px 3px 16px !important;">
-          <!-- <div class="grayLine"></div> -->
       </div>
       <ion-item-divider class="itemImgs padding">
         <div class="largeLeftImg">
           <img src="../../assets/imgs/2.png" alt="">
-          <div class="type">了解艺术家</div>
         </div>
       </ion-item-divider>
+      <!-- <div class="type">了解艺术家</div> -->
       <ion-item-divider class="summary padding">
         <h2 class="title-h2" item-start>[我爱独角兽]</h2>
         <span>我想探索一个对话的好奇心、焦虑和能量。根据我们成长的方式，有时我们会因为紧张的生活和单调的日常生活而失去新鲜感</span>
@@ -54,9 +53,9 @@
         <img src="../../assets/imgs/transmit.svg" alt="">
         <img src="../../assets/imgs/redHeart.svg" alt="">
         <img src="../../assets/imgs/good.svg" alt="">
-        <span class="footerNum">98745</span>
+        <div class="footerNum">98745</div>
         <img src="../../assets/imgs/msg.svg" alt="">
-        <span>2845</span>
+        <div class="footerNum">2845</div>
         <img class="moreImg" src="../../assets/imgs/more.svg" alt="">
       </div>
     </ion-item>
@@ -100,16 +99,52 @@
           <img src="../../assets/imgs/transmit.svg" alt="">
           <img src="../../assets/imgs/redHeart.svg" alt="">
           <img src="../../assets/imgs/good.svg" alt="">
-          <span class="footerNum">98745</span>
+          <div class="footerNum">98745</div>
           <img src="../../assets/imgs/msg.svg" alt="">
-          <span>2845</span>
+          <div class="footerNum">2845</div>
           <img class="moreImg" src="../../assets/imgs/more.svg" alt="">
         </div>
       </ion-item>
       <div class="grayHeightLine"></div>
   </ion-item>
 
-  <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+  <div class="footer">
+    <div class="recommend"><img src="../../assets/fonts/recommend.svg">小编推荐</div>
+    <ion-item *ngFor="let item of testArr" >
+      <div style="padding:0px 16px 0px 16px !important;">
+          <div class="grayLine"></div>
+      </div>
+      <ion-item class="footerItem">
+        <div>
+          <img class="footerAvater" src="../../assets/imgs/2.png" alt="">
+        </div>
+        <div>
+          <span>闹玩制造研究所</span>
+          <span>这里有屌调的资讯和酷酷的艺术家，这里只有你想不到，没有你找不到的！</span>
+        </div>
+        <div>
+          <img class="footerAdd" src="../../assets/fonts/add.svg" alt="">
+        </div>
+      </ion-item>
+    </ion-item>
+    <div class="searchMore">
+      查看更多
+      <img src="../../assets/fonts/rightArrow.svg" alt="">
+    </div>
+    <div class="grayHeightLine"></div>
+  </div>
+
+  <div class="">
+    <div class="searchYesterday">
+      <img src="../../assets/fonts/calendar.svg" alt="">
+      查看前一天
+      <img src="" alt="">
+    </div>
+  </div>
+
+  <div style="height:80px;width:100%;" ></div>
+
+  <!-- <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
     <ion-infinite-scroll-content></ion-infinite-scroll-content>
-  </ion-infinite-scroll>
+  </ion-infinite-scroll> -->
 </ion-content>
