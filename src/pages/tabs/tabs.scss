@@ -1,61 +1,145 @@
 @import '../assets/fonts/videogular.css';
-// page-tabs {
-    .tabs-class{
-        background: -webkit-linear-gradient(left, #333 , #000) !important;
-    }
-// }
-    .tabbar{
-        background: -webkit-linear-gradient(left, #333 , #000) !important;
-    }
-    .tab-button{
-        color: #fff !important;
-    }
-    .tab-button-text{
-        color: #fff !important;
-        font-weight: 600;
-    }
-    .ion-ios-s-custom {
-    content: url("../../assets/fonts/S1.svg");
-    }
-    
-    .ion-ios-s-custom-outline {
-    content: url("../../assets/fonts/S.svg");
-    }
 
-    .ion-ios-o-custom {
-    content: url("../../assets/fonts/o1.svg");
-    }
-    .ion-ios-o-custom-outline {
-    content: url("../../assets/fonts/o.svg");
-    }
-        
-    .ion-ios-m-custom {
-    content: url("../../assets/fonts/M1.svg");
-    }
-    .ion-ios-m-custom-outline {
-    content: url("../../assets/fonts/M.svg");
-    }
+.tabs-class {
+  background: -webkit-linear-gradient(left, #333, #000) !important;
+}
 
-    .ion-ios-e-custom {
-    content: url("../../assets/fonts/E1.svg");
-    }
-    .ion-ios-e-custom-outline {
-    content: url("../../assets/fonts/E.svg");
-    }
+.tabbar {
+  background: -webkit-linear-gradient(left, #333, #000) !important;
+}
 
-    .fish{
-        font-size: 30px;
-        width: 100px;
-        height: 100px;
-    }
-    .ion-ios-fish-custom {
-    content: url("../../assets/fonts/fish2.svg");
-    }
-    .ion-ios-fish-custom-outline {
-    content: url("../../assets/fonts/fish.svg");
-    }
-    .ion-ios-fish-custom, .ion-ios-fish-custom-outline{
-        width: 45px !important;
-        height: 45px !important;
-        min-width: 45px !important;
-    }
+.tab-button {
+  color: #fff !important;
+}
+
+.tab-button-text {
+  color: #fff !important;
+  font-weight: 600;
+}
+
+.ion-ios-s-custom {
+  content: url("../../assets/fonts/S1.svg");
+}
+
+.ion-md-s-custom {
+  width: 25px !important;
+  height: 25px !important;
+  min-width: 25px !important;
+  content: url("../../assets/fonts/S1.svg");
+}
+
+.ion-ios-s-custom-outline {
+  content: url("../../assets/fonts/S.svg");
+}
+
+.ion-md-s-custom-outline {
+  width: 25px !important;
+  height: 25px !important;
+  min-width: 25px !important;
+  content: url("../../assets/fonts/S.svg");
+}
+
+.ion-ios-o-custom {
+  content: url("../../assets/fonts/o1.svg");
+}
+
+.ion-md-o-custom {
+  width: 25px !important;
+  height: 25px !important;
+  min-width: 25px !important;
+  content: url("../../assets/fonts/o1.svg");
+}
+
+.ion-ios-o-custom-outline {
+  content: url("../../assets/fonts/o.svg");
+}
+
+.ion-md-o-custom-outline {
+  width: 25px !important;
+  height: 25px !important;
+  min-width: 25px !important;
+  content: url("../../assets/fonts/o.svg");
+}
+
+.ion-ios-m-custom {
+  content: url("../../assets/fonts/M1.svg");
+}
+
+.ion-md-m-custom {
+  width: 25px !important;
+  height: 25px !important;
+  min-width: 25px !important;
+  content: url("../../assets/fonts/M1.svg");
+}
+
+.ion-ios-m-custom-outline {
+  content: url("../../assets/fonts/M.svg");
+}
+
+.ion-md-m-custom-outline {
+  width: 25px !important;
+  height: 25px !important;
+  min-width: 25px !important;
+  content: url("../../assets/fonts/M.svg");
+}
+
+.ion-ios-e-custom {
+  content: url("../../assets/fonts/E1.svg");
+}
+
+.ion-md-e-custom {
+  width: 25px !important;
+  height: 25px !important;
+  min-width: 25px !important;
+  content: url("../../assets/fonts/E1.svg");
+}
+
+.ion-ios-e-custom-outline {
+  content: url("../../assets/fonts/E.svg");
+}
+
+.ion-md-e-custom-outline {
+  width: 25px !important;
+  height: 25px !important;
+  min-width: 25px !important;
+  content: url("../../assets/fonts/E.svg");
+}
+
+.fish {
+  font-size: 30px;
+  width: 100px;
+  height: 100px;
+}
+
+.ion-ios-fish-custom {
+  content: url("../../assets/fonts/fish2.svg");
+}
+
+.ion-md-fish-custom {
+  content: url("../../assets/fonts/fish2.svg");
+}
+
+.ion-ios-fish-custom-outline {
+  content: url("../../assets/fonts/fish.svg");
+}
+
+.ion-md-fish-custom-outline {
+  content: url("../../assets/fonts/fish.svg");
+}
+
+.ion-ios-fish-custom,
+.ion-ios-fish-custom-outline {
+  width: 45px !important;
+  height: 45px !important;
+  min-width: 45px !important;
+}
+
+.ion-md-fish-custom,
+.ion-md-fish-custom-outline {
+  width: 45px !important;
+  height: 45px !important;
+  min-width: 45px !important;
+}
+.tabs-md .tabbar{
+    height: 52px !important;
+}

@@ -109,3 +109,15 @@ vg-time-display{
     padding-left: 16px !important;
     padding-right: 16px !important;
 }
+.item-divider-md{
+    border-bottom:0px !important;
+}
+.item-divider-md{
+    color: #000 !important;
+}
+.item-md [item-left], .item-md [item-right], .item-md [item-start], .item-md [item-end]{
+    margin: 0 !important;
+}
+.label-md{
+    margin: 3px 0px 3px 0 !important;
+}

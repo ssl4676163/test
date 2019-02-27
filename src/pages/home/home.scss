@@ -15,6 +15,18 @@ page-home {
     margin-top: -10px;
   }
 
+  .bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default{
+    color: #fff !important;
+  }
+
+  .button-md{
+    background-color: transparent !important;
+  }
+
+  .item-md{
+    padding-left: 0px !important;
+  }
+
   h2 {
     padding-top: 5px;
   }
@@ -72,11 +84,6 @@ page-home {
     padding-right: 0 !important;
     padding-top: 0 !important;
     margin: 0px !important;
-
-    // display:-webkit-box !important;
-    // overflow:hidden !important;
-    // white-space:nowrap !important;
-    // text-overflow:ellipsis !important;
     overflow: hidden;
     text-overflow: ellipsis;
     -o-text-overflow: ellipsis;

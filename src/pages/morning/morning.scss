@@ -274,4 +274,17 @@ page-morning{
         border-radius: 6px;
         float: right;
     }
+
+    .item-divider-md{
+        border-bottom:0px !important;
+    }
+    .item-divider-md{
+        color: #000 !important;
+    }
+    .item-md [item-left], .item-md [item-right], .item-md [item-start], .item-md [item-end]{
+        margin: 0 !important;
+    }
+    .label-md{
+        margin: 3px 0px 3px 0 !important;
+    }
 }

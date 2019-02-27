@@ -8,10 +8,10 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide {{i==0?'bottomLine':''}}" *ngFor="let item of menus;let i=index;" tappable (click)="selectPageMenu($event,i)">{{item}}</div>
         </div>
-        <!-- <ion-icon name="star"></ion-icon> -->
-          <button ion-button icon-only style="margin-top:10px !important;">
-            <img class="music" src="../../assets/imgs/music.svg" alt="">
-          </button>
+        <button ion-button icon-only style="margin-top:10px !important;">
+            <!-- (click)="music()" -->
+          <img class="music" src="../../assets/imgs/music.svg" alt="" [navPush]="musicPage">
+        </button>
       </div>
     </div>
   </ion-navbar>

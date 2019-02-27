@@ -3,6 +3,7 @@ import { NavController,ToastController,MenuController,App,LoadingController ,Sli
 import { RestProvider } from '../../providers/rest/rest';
 import { ModalController } from 'ionic-angular';
 import { DetailPage } from '../detail/detail';
+import { MusicPage } from '../music/music';
 
 declare var Swiper;
 
@@ -20,11 +21,13 @@ export class HomePage {
   now = new Date(); // 当前时间
   hour = this.now.getHours();
   sayHolle = "早上好";
+  musicPage;
   testArray:string[]=[ '菜单一','菜单二' ,'菜单三' ,'菜单四' ];
   menus: Array<string> = [this.sayHolle, "我的订阅", "猜你喜欢", "视频"];
   testSegment:string=this.testArray[0];
   constructor(public navCtrl: NavController,public app: App,public modalCtrl: ModalController,public rest:RestProvider,public loadingCtrl: LoadingController, public menu: MenuController,private toastCtrl: ToastController,public cd :ChangeDetectorRef) {
     menu.enable(true);
+    this.musicPage =  MusicPage;
   }
 
   ionViewDidLoad(){
@@ -140,6 +143,10 @@ export class HomePage {
     };
     let profileModal = this.modalCtrl.create(DetailPage, data);
     profileModal.present();
+  }
+
+  music(){
+    this.navCtrl.push(MusicPage);
   }
 
   presentLoading() {

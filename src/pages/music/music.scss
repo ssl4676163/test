@@ -1,0 +1,62 @@
+@import '../assets/fonts/videogular.css';
+
+page-music {
+    vg-player {
+        height: 200px;
+    }
+    
+    .bar-button-default-ios {
+        color: #fff !important;
+        background-color: transparent !important;
+    }
+
+    .toolbar-background {
+        //这个是头部的背景色
+        // background-color: #333 !important;
+        background: -webkit-linear-gradient(left, #333, #000) !important;
+    }
+    
+    .toolbar-ios{
+        min-height:52px;
+    }
+    
+    .body{
+        height: 100%;
+        margin-top: 52px;
+        // background-color: #fff;
+        background: -webkit-linear-gradient(bottom right, #1f1e1e ,#3d3d3d) !important;
+    }
+
+    .musicTitle{
+        color: #fff;
+        font-size: 15px;
+        text-align: center;
+        margin-left: -20px;
+    }
+
+    .music{
+        height: 30px;
+        width: 30px;
+        margin: -25px 10px 0 0;
+        float: right;
+        position: absolute;
+        right: 0%;
+    }
+
+    .musicFrom{
+        text-align: center;
+        font-size: 14px; 
+        color: #fff;
+        padding-top: 15px;
+    }
+
+    .musicFrom span{
+        color: #3eb7b9;
+    }
+    .musicName{
+        color: #fff;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+}

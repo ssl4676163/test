@@ -19,6 +19,7 @@ import { guessYouLikePage } from '../pages/guessYouLike/guessYouLike';
 import { VideoPage } from '../pages/video/video';
 import { TabsPage } from '../pages/tabs/tabs';
 import { DiscoverPage } from '../pages/discover/discover';
+import { MusicPage } from '../pages/music/music';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -35,7 +36,8 @@ import { ComponentsModule } from '../components/components.module';
     myReadPage,
     guessYouLikePage,
     VideoPage,
-    DiscoverPage
+    DiscoverPage,
+    MusicPage
   ],
   imports: [
     VgCoreModule,
@@ -45,7 +47,11 @@ import { ComponentsModule } from '../components/components.module';
     BrowserModule,
     HttpModule,
     HttpClientModule,
-    IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(MyApp,{
+      tabsHideOnSubPages: "true",
+      backButtonText: "返回",
+      pageTransition: 'wp-transition'
+    }),
     ComponentsModule
   ],
   bootstrap: [IonicApp],
@@ -59,6 +65,7 @@ import { ComponentsModule } from '../components/components.module';
     guessYouLikePage,
     VideoPage,
     DiscoverPage,
+    MusicPage,
     TabsPage
   ],
   providers: [
